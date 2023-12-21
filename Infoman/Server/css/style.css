@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#searchCourse-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  width: 32.5em;
+  margin-left: 383px;
+}
+
+#searchCourse-input + button {
+  background-color: #0788b3;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 1px;
+}
+
+#searchCourse-input + button:hover {
+  background-color: #0073a3;
+}
+
+nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c8cbd9;
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0 30px;
+  list-style-type: none;
+}
+
+ul li:not(:last-child) {
+  margin-right: 40px;
+}
+
+ul li {
+  border: 2px solid transparent;
+  padding: 10px;
+  transition: background 0.2s;
+}
+
+ul li a {
+  color: #335e99;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+ul li:hover {
+  background: #2e5c8a;
+}
+
+ul li:hover a {
+  color: #f9f8fd;
+}
+
+ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0px 3px 5px 2px #ebecf1;
+}
+
+ul li:hover ul li a {
+  color: #f9f8fd;
+}
+
+li.active {
+  background-color: #2e5c8a;
+}
+
+li.active a {
+  color: white;
+  font-weight: 700;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 1px solid #d3d3d3;
+  padding: 20px;
+}
+
+th {
+  background-color: #4b0082;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+th i.fas {
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+tr:not(:last-child) {
+  border-bottom: 1px solid #f2f2f2; /* Apply a bottom border to all tr elements */
+}
+
+h1 {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+tr:hover {
+  background-color: #d2d2d2;
+}
+
+#create-form {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+#create-form h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#create-form div {
+  margin: 10px 0;
+}
+
+#create-form label {
+  display: block;
+}
+
+#create-form input[type="text"],
+#create-form input[type="email"],
+#create-form input[type="date"],
+#create-form select {
+  width: 80%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #8e8e8e;
+  border-radius: 3px;
+}
+
+#create-form button {
+  background-color: #0788b3;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#create-form button:hover {
+  background-color: #0073a3;
+}
+
+#search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  width: 85.7em;
+  margin-left: 29px;
+}
+
+#search-input + button {
+  background-color: #0788b3;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 1px;
+}
+
+#search-input + button:hover {
+  background-color: #0073a3;
+}
+
+i.fas {
+  font-size: 20px;
+  vertical-align: middle; /* Vertically align the icons within the text */
+  display: inline-block; /* Make the icons inline-block elements for centering */
+  margin: 0 auto;
+  margin-right: 0.5em; /* Center the icons horizontally within the cell */
+}
+
+/* Additional styles for specific icons */
+i.fas.fa-trash {
+  color: #ff5733; /* Change the color for the delete icon */
+  cursor: pointer;
+}
+
+i.fas.fa-edit {
+  color: #379494; /* Change the color for the edit icon */
+  cursor: pointer;
+}
+
+#edit-save {
+  display: none;
+}

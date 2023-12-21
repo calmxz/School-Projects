@@ -1,0 +1,89 @@
+<h1>Student Page</h1>
+
+<div id="create-form">
+  <form>
+    <h2 id="form-title">Add New Record</h2>
+    <div>
+      <label for="fname">First name</label>
+      <input type="text" id="fname" />
+    </div>
+    <div>
+      <label for="mname">Middle name</label>
+      <input type="text" id="mname" />
+    </div>
+    <div>
+      <label for="lname">Last name</label>
+      <input type="text" id="lname" />
+    </div>
+    <div>
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" />
+    </div>
+    <div>
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="" selected disabled>Choose an option</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="civil_status">Civil status</label>
+      <select id="civil_status">
+        <option value="" selected disabled>Choose an option</option>
+        <option value="S">Single</option>
+        <option value="M">Married</option>
+        <option value="W">Widowed</option>
+        <option value="Se">Separated</option>
+      </select>
+    </div>
+    <div>
+      <label for="phone">Phone number</label>
+      <input type="text" id="phone" />
+      <input type="hidden" id="phoneId" />
+    </div>
+    <div>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" />
+      <input type="hidden" id="emailId" />
+    </div>
+    <div>
+      <input type="hidden" id="id" />
+    </div>
+    <div>
+      <button id="new-save" type="button" onclick="save(event)">Save</button>
+      <button id="edit-save" type="button" onclick="updateSave(event)">
+        Save Changes
+      </button>
+    </div>
+  </form>
+</div>
+
+<div>
+  <div>
+    <form>
+      <input type="text" id="search-input" />
+      <button onclick="search(event)">Search</button>
+    </form>
+  </div>
+
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Gender</th>
+        <th>Civil status</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script src="/js-student"></script>
